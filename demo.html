@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/rouletteWheel.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var items = ["Maggie Mays", "Subway", "China China", "Herrons", "Pizza", "Build a Burger", "Boojum", "French Village", "KFC", "Centra"];
+
+		  $('#canvas').rouletteWheel({
+		    items : items,
+		    spinText : 'Lunch Me',
+		  });
+
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+
+	<canvas id="canvas" width="500" height="500"></canvas>
+	
+</body>
+</html>
