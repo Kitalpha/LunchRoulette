@@ -23,9 +23,19 @@
 		    spinText : 'Lunch Me',
 		});
 
-		var audio = document.getElementById("mario-music");
-		audio.volume = 0.15;
+
 	});
+
+	var audio = document.getElementById("mario-music");
+
+	function playAudio() {
+	    audio.volume = 0.15;
+	}
+
+	function stopAudio() {
+	    audio.pause();
+	    audio.currentTime = 0;
+	}
     </script>
     <title>LunchRoulette by Kitalpha</title>
   </head>

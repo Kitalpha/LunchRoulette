@@ -243,6 +243,7 @@ $.widget('javobyte.rouletteWheel', {
         this._options.spinTime = 0;
         this._options.spinTimeTotal = Math.random() * 3000 + 4 * 1000 + 2 * Math.random();
         this._rotate();
+        playAudio();
     },
 
     stop: function () {
@@ -258,5 +259,6 @@ $.widget('javobyte.rouletteWheel', {
         var keys = Object.keys(this.options.items);
         var key = keys[index];
         this.options.selected(key, this.options.items[key]);
+        stopAudio();
     }
 });
