@@ -27,6 +27,8 @@
 	});
 
 	var audio = document.getElementById("mario-music");
+	audio.pause();
+	audio.currentTime = 0;
 
 	function playAudio() {
 	    audio.volume = 0.15;
