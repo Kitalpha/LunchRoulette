@@ -36,7 +36,7 @@ function getColor(index, total) {
 $.widget('javobyte.rouletteWheel', {
 
     options: {
-        pointer: $('<img>').attr('src', 'images/pointer.png')[0],
+        pointer: $('<img>').attr('src', 'images/food.png')[0],
         selected: function () {
         },
         spinText: 'SPIN',
@@ -155,17 +155,7 @@ $.widget('javobyte.rouletteWheel', {
         ctx.arc(cx, cy, innerRadius, 0, 2 * Math.PI);
         ctx.clip();
 
-        var shadowColor = this.is_rotating() ? 'black' : 'white';
-
         ctx.beginPath();
-
-        ctx.strokeStyle = shadowColor;
-        ctx.lineWidth = 5;
-        ctx.shadowBlur = 15;
-        ctx.shadowColor = shadowColor;
-
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
 
         ctx.arc(cx, cy, innerRadius + 3, 0, 2 * Math.PI);
 
