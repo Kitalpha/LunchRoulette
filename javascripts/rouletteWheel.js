@@ -36,7 +36,7 @@ function getColor(index, total) {
 $.widget('javobyte.rouletteWheel', {
 
     options: {
-        pointer: $('<img>').attr('src', 'imgages/pointer.png')[0],
+        pointer: $('<img>').attr('src', 'images/pointer.png')[0],
         selected: function () {
         },
         spinText: 'SPIN',
