@@ -22,15 +22,11 @@
 		    items : items,
 		    spinText : 'Lunch Me',
 		});
-
-
 	});
 
-	var audio = document.getElementById("mario-music");
-	audio.pause();
-	audio.currentTime = 0;
-
 	function playAudio() {
+	    audio = document.getElementById("mario-music");
+	    audio.play();
 	    audio.volume = 0.15;
 	}
 
@@ -54,7 +50,7 @@
         <section id="downloads" class="clearfix">
             <center><h3>Spin the Wheel!</h3></center>
 
-            <audio id="mario-music" controls autoplay>
+            <audio id="mario-music">
                 <source src="musics/01-super-mario-bros.mp3" type="audio/ogg">
             </audio>
         </section>
